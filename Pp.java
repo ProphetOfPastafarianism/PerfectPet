@@ -27,13 +27,13 @@ public class Pp
         }
     
         //add and for rock in case
-        if (season=="winter"){
+        if (season=="winter" && name.substring(0,1)==("A")){
         System.out.println("You get an axolotl!");
         }
         if (season=="summer"){
         System.out.println("You get a pony!");
         }
-        if({
+        if (season=="winter"){
         System.out.println("You get a rock!");    
         }
     }
@@ -41,7 +41,9 @@ public class Pp
         if (season=="winter"){
         System.out.println("You get a giraffe!");
         }
-    
+        if (season!="winter" && season!="fall"){
+            System.out.println("You get a dog!");
+        }
     
     }
 
