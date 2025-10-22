@@ -18,6 +18,7 @@ public class Pp
     System.out.println("Your name:");
     //gets ur name
     String name = myObj.nextLine();
+    char ch = name.substring(0,1);
     if (color=="blue"){
         if (season=="fall"){    
         System.out.println("you get an alligator!");
@@ -27,13 +28,13 @@ public class Pp
         }
     
         //add and for rock in case
-        if (season=="winter" && name.substring(0,1)==("A")){
+        if (season=="winter" && (ch == 'b' || ch == 'c' || ch == 'd' || ch == 'f' || ch == 'g' || ch == 'h' || ch == 'j' || ch == 'k' || ch == 'l' || ch == 'm' || ch == 'n' || ch == 'p' || ch == 'q' || ch == 'r' || ch == 's' || ch == 't' || ch == 'v' || ch == 'w' || ch == 'x' || ch == 'y' || ch == 'z' )){
         System.out.println("You get an axolotl!");
         }
         if (season=="summer"){
         System.out.println("You get a pony!");
         }
-        if (season=="winter"){
+        if (season=="winter" && (ch != 'b' || ch == 'c' || ch == 'd' || ch == 'f' || ch == 'g' || ch == 'h' || ch == 'j' || ch == 'k' || ch == 'l' || ch == 'm' || ch == 'n' || ch == 'p' || ch == 'q' || ch == 'r' || ch == 's' || ch == 't' || ch == 'v' || ch == 'w' || ch == 'x' || ch == 'y' || ch == 'z' )){
         System.out.println("You get a rock!");    
         }
     }
